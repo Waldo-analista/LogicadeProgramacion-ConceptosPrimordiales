@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1>CALCULAR IMC</h1>
+
+<script>
+function saltarlinea(){
+document.write("<br>".repeat(3));
+}
+function imprimir(text){
+
+document.write(text);
+saltarlinea();
+}
+
+function imc(peso, altura, nombre){
+let imc=peso/(altura*altura)
+imprimir("El IMC de "+nombre+" es igual a "+imc);
+return imc
+}
+
+let nombre=prompt("Ingrese su Nombre");
+let peso= prompt("Ingrese su peso en kg");
+let altura=prompt("Ingrese su altura en mts");
+var imc=imc(peso,altura,nombre);
+
+
+switch (true){
+	case (imc<18.5): imprimir("usted esta bajo peso"); break;
+	case(imc>=18.5 && imc<25):imprimir("usted esta en el rango de peso normal");break;
+	case(imc>=25 && imc<30):imprimir("usted posee sobrepeso");break;
+	case(imc>=30):imprimir("usted posee obesidad");break;
+}
+
+</script>
