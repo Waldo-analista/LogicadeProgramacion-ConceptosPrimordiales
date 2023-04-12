@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>Tabla de Multiplicar</h1>
+
+<script>
+function saltarlinea(){
+document.write("<br>".repeat(3));
+}
+function imprimir(text){
+
+document.write(text);
+saltarlinea();
+}
+
+function tabla(n) {
+for(let i=1;i<11;i=i+1){
+imprimir("El número "+n+" multiplicado por "+i+" es igual a: "+(n*i))
+if(i==10){imprimir("<b>FIN de la tabla de multiplicar</b>");}
+}
+
+}
+
+
+let numero=1*prompt("Ingrese número del cual quiere su tabla de multiplicar");
+tabla(numero);
+
+
+
+</script>
