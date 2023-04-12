@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<h1>Años Mundial de Futbol</h1>
+
+<script>
+function saltarlinea(){
+document.write("<br>".repeat(3));
+}
+function imprimir(text){
+
+document.write(text);
+saltarlinea();
+}
+ let yearworldcup=1930;
+ let yearlimit=1*prompt("Ingrese año límite para calcular los mundiales");
+ 
+while(yearworldcup<=yearlimit){
+imprimir("Hubo mundial de futbol en el año: "+yearworldcup);
+yearworldcup=yearworldcup+4;
+
+}
+
+
+
+</script>
