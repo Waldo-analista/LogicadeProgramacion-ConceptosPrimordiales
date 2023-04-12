@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<h1>CALCULAR IMC</h1>
+
+<script>
+function saltarlinea(){
+document.write("<br>".repeat(3));
+}
+function imprimir(text){
+
+document.write(text);
+saltarlinea();
+}
+
+function sorteo(n){
+ return Math.round(n*Math.random())+1;
+}
+function mayoromenor(target,numeropasado){
+let mayoromenor;
+ if(target>numeropasado){mayoromenor="MENOR";}
+ else{mayoromenor="MAYOR";}
+return  mayoromenor;
+}
+
+let target=sorteo(10);
+let numeropasado=1*prompt("Ingrese un número de 1 a 10");
+
+switch (true){
+   case (numeropasado==target):imprimir("Usted ha acertado. Su número dado fue de :"+numeropasado+" y el número target fue de: "+target);break;
+   case(numeropasado!=target): imprimir("Usted ha errado. El número que usted dio fue de: "+numeropasado+
+   " y el número target fue de: "+target+". El número dado por usted fue "+mayoromenor(target,numeropasado)+" que el target.");break;
+
+}
+
+</script>
