@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<input class="texto" type="text" > </input>
+<input class="boton" type="button" value="Mostrar"  > </input>
+
+<script>
+  
+   var input=document.querySelector("input.texto");
+   input.focus();
+   
+   
+   function show(){
+    alert("El texto ingresado es: "+input.value);
+}
+
+ var boton=document.querySelector("input.boton");
+   
+   
+   boton.onclick=function() {show()};
+  
+   
+</script>
